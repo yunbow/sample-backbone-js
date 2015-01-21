@@ -7,13 +7,32 @@ $(function() {
 		},
 		initialize : function() {
 			this.compiledTemplate = _.template($('#template-programing-subview').text());
-			this.optionList = [ 
-			    new OptionView({'label' : 'JavaScript','attributes' : {'value' : '1'}}),
-			    new OptionView({'label' : 'Java','attributes' : {'value' : '2'}}),
-			    new OptionView({'label' : 'C言語','attributes' : {'value' : '3'}}),
-			    new OptionView({'label' : 'Ruby','attributes' : {'value' : '4'}}),
-			    new OptionView({'label' : 'Python','attributes' : {'value' : '5'}})
-			    ];
+			this.optionList = [ new OptionView({
+				'label' : 'JavaScript',
+				'attributes' : {
+					'value' : '1'
+				}
+			}), new OptionView({
+				'label' : 'Java',
+				'attributes' : {
+					'value' : '2'
+				}
+			}), new OptionView({
+				'label' : 'C言語',
+				'attributes' : {
+					'value' : '3'
+				}
+			}), new OptionView({
+				'label' : 'Ruby',
+				'attributes' : {
+					'value' : '4'
+				}
+			}), new OptionView({
+				'label' : 'Python',
+				'attributes' : {
+					'value' : '5'
+				}
+			}) ];
 		},
 		render : function() {
 			var data = {
@@ -35,7 +54,7 @@ $(function() {
 		initialize : function(args) {
 			this.label = args.label;
 		},
-		render : function(){
+		render : function() {
 			this.$el.html(this.label);
 			return this;
 		}

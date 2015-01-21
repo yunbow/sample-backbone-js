@@ -21,4 +21,3 @@ $(function() {
 	var sampleView = new SampleView();
 	$('body').append(sampleView.render().el);
 });
-
