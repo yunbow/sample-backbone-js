@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Backbone.js sample</title>
+<link rel="stylesheet" href="main.css">
+<script src="../../lib/jquery-2.1.1.js"></script>
+<script src="../../lib/underscore.js"></script>
+<script src="../../lib/backbone.js"></script>
+<script src="main.js"></script>
+<script type="text/template" id="template-user-list-item">
+	<%= label.name %>
+</script>
+<script type="text/template" id="template-user-register">
+	<label for="id_input_name"><%= label.name %></label>
+	<input id="id_input_name" type="text">
+	<br>
+	<input id="id_button_regist" type="button" value="<%= label.registButton %>">
+	<hr>
+</script>
+</head>
+<body>
+</body>
+</html>
