@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Backbone.js sample</title>
+<link rel="stylesheet" href="main.css">
+<script src="../../lib/jquery-2.1.1.js"></script>
+<script src="../../lib/underscore.js"></script>
+<script src="../../lib/backbone.js"></script>
+<script src="main.js"></script>
+<script type="text/template" id="template-user-list-item">
+	<%= label.name %>
+	<input type="button" class="cls_button_detail" value="<%= label.detailButton %>">
+	<input type="button" class="cls_button_delete" value="<%= label.deleteButton %>">
+</script>
+<script type="text/template" id="template-user-register">
+	<label for="id_input_name"><%= label.name %></label>
+	<input id="id_input_name" type="text">
+	<br>
+	<label for="id_input_age"><%= label.age %></label>
+	<input id="id_input_age" type="number" min="0" max="99">
+	<br>
+	<label for="id_select_gender"><%= label.gender %></label>
+	<select id="id_select_gender">
+		<option><%= label.male %></option>
+		<option><%= label.female %></option>
+	</select>
+	<br>
+	<label for="id_select_blood"><%= label.blood %></label>
+	<select id="id_select_blood">
+		<option>A</option>
+		<option>B</option>
+		<option>O</option>
+		<option>AB</option>
+	</select>
+	<br>
+	<label for="id_input_mail"><%= label.mail %></label>
+	<input id="id_input_mail" type="text">
+	<br>
+	<input id="id_button_regist" type="button" value="<%= label.registButton %>">
+	<hr>
+</script>
+</head>
+<body>
+</body>
+</html>
