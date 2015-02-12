@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Backbone.js sample</title>
+<link rel="stylesheet" href="main.css">
+<script src="../../lib/jquery-2.1.1.js"></script>
+<script src="../../lib/underscore.js"></script>
+<script src="../../lib/backbone.js"></script>
+<script src="main.js"></script>
+<script type="text/template" id="template-user-table">
+	<table class="cls_table">
+		<thead>
+			<tr>
+				<th><a href="javascript:void(0)" class="cls_header" name="age"><%= header.age %><span class="cls_sort_icon"></span></a></th>
+			</tr>
+		</thead>
+		<tbody id="id_tbody">
+		</tbody>
+	</table>
+</script>
+<script type="text/template" id="template-user-table-item">
+	<td><%= data.age %></td>
+</script>
+<script type="text/template" id="template-user-register">
+	<label for="id_input_age"><%= label.age %></label>
+	<input id="id_input_age" type="number" min="0" max="99">
+	<br>
+	<input id="id_button_regist" type="button" value="<%= label.registButton %>">
+	<hr>
+</script>
+</head>
+<body>
+</body>
+</html>
