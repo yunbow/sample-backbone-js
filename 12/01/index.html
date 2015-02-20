@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Backbone.js sample</title>
+<link rel="stylesheet" href="main.css">
+<script src="../../lib/jquery-2.1.1.js"></script>
+<script src="../../lib/underscore.js"></script>
+<script src="../../lib/backbone.js"></script>
+<script src="main.js"></script>
+<script type="text/template" id="template-user-table">
+	<input id="id_button_delete" type="button" value="<%= label.deleteButton %>">
+	<hr>
+	<table class="cls_table">
+		<thead>
+			<tr>
+				<th></th>
+				<th><%= header.name %></th>
+			</tr>
+		</thead>
+		<tbody id="id_tbody">
+		</tbody>
+	</table>
+</script>
+<script type="text/template" id="template-user-table-item">
+	<th>
+		<input class="cls_radio_button" type="radio" name="item">
+	</th>
+	<td><%= data.name %></td>
+</script>
+<script type="text/template" id="template-user-register">
+	<label for="id_input_name"><%= label.name %></label>
+	<input id="id_input_name" type="text">
+	<br>
+	<input id="id_button_regist" type="button" value="<%= label.registButton %>">
+	<hr>
+</script>
+</head>
+<body>
+</body>
+</html>
